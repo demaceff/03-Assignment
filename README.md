@@ -86,7 +86,7 @@ Input files from the original experiment:
  - 5.	From the data set in step 4, creates a second, independent tidy data set with the average 
      of each variable for each activity and each subject.
 	 
-Assumtions/Expected Results:
+++Assumtions/Expected Results:
 
 1.	The long form has been adopted for the initial tidy Dataset giving 10299 obs of 68 variables
 
