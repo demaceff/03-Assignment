@@ -87,8 +87,11 @@ Input files from the original experiment:
      of each variable for each activity and each subject.
 	 
 Assumtions/Expected Results:
+
 1.	The long form has been adopted for the initial tidy Dataset giving 10299 obs of 68 variables
+
 2.	68 columns have been selected from the original data based on interpreting the requirements of "mean()" and "std()"
+
 3.	Tidy Dataset 2 has 11880 obs of 4 variables 
 *			Participant_Number
 *			Activity_Recorded	
