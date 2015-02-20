@@ -93,10 +93,15 @@ Assumtions/Expected Results:
 2.	68 columns have been selected from the original data based on interpreting the requirements of "mean()" and "std()"
 
 3.	Tidy Dataset 2 has 11880 obs of 4 variables:
+
 			Participant_Number
+			
 			Activity_Recorded
+			
 			Movement_Recorded
+			
 			Average_of_Recorded_Movement
+
 
 ******************************************************************************************************************
 #SECTION 3. SCRIPT Detail	 
