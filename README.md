@@ -69,26 +69,27 @@ Input files from the original experiment:
  a  data set. The goal is to prepare tidy data that can be used for later analysis. This will
  be graded by peers on a series of yes/no questions related to the project. 
 
- Project Requirements: -1) a tidy data set, 
-                       -2) a link to a Github repository with the script for performing the analysis, and 
-                       -3) a code book that describes the variables, the data, and any transformations or 
-                          work that you performed to clean up the data called CodeBook.md. 
-                          You should also include a README.md in the repo with the scripts. (this file)
-                          This repo explains how all of the scripts work and how they are connected.  
+ Project Requirements: 
+ - 1) A tidy data set, 
+ - 2) A link to a Github repository with the script for performing the analysis, and 
+ - 3) A code book that describes the variables, the data, and any transformations or 
+    work that you performed to clean up the data called CodeBook.md. 
+    You should also include a README.md in the repo with the scripts. (this file)
+    This repo explains how all of the scripts work and how they are connected.  
 
  This R Script is run_analysis.R and does the following. 
 
- -1. Merges the training and the test sets to create one data set.
- -2.	Extracts only the measurements on the mean and standard deviation for each measurement. 
- -3.	Uses descriptive activity names to name the activities in the data set
- -4.	Appropriately labels the data set with descriptive variable names. 
- -5.	From the data set in step 4, creates a second, independent tidy data set with the average 
+ - 1. Merges the training and the test sets to create one data set.
+ - 2.	Extracts only the measurements on the mean and standard deviation for each measurement. 
+ - 3.	Uses descriptive activity names to name the activities in the data set
+ - 4.	Appropriately labels the data set with descriptive variable names. 
+ - 5.	From the data set in step 4, creates a second, independent tidy data set with the average 
      of each variable for each activity and each subject.
 	 
 Assumtions/Expected Results:
-	-1. The long form has been adopted for the initial tidy Dataset giving 10299 obs of 68 variables
-	-2. 68 columns have been selected from the original data based on interpreting the requirements of "mean()" and "std()"
-	-3. Tidy Dataset 2 has 11880 obs of 4 variables 
+	- 1. The long form has been adopted for the initial tidy Dataset giving 10299 obs of 68 variables
+	- 2. 68 columns have been selected from the original data based on interpreting the requirements of "mean()" and "std()"
+	- 3. Tidy Dataset 2 has 11880 obs of 4 variables 
 		-Participant_Number
 		-Activity_Recorded	
 		-Movement_Recorded	
