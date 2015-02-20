@@ -79,7 +79,7 @@ Input files from the original experiment:
 
  This R Script is run_analysis.R and does the following. 
 
- - 1. Merges the training and the test sets to create one data set.
+ - 1.	Merges the training and the test sets to create one data set.
  - 2.	Extracts only the measurements on the mean and standard deviation for each measurement. 
  - 3.	Uses descriptive activity names to name the activities in the data set
  - 4.	Appropriately labels the data set with descriptive variable names. 
@@ -87,13 +87,13 @@ Input files from the original experiment:
      of each variable for each activity and each subject.
 	 
 Assumtions/Expected Results:
-	- 1. The long form has been adopted for the initial tidy Dataset giving 10299 obs of 68 variables
-	- 2. 68 columns have been selected from the original data based on interpreting the requirements of "mean()" and "std()"
-	- 3. Tidy Dataset 2 has 11880 obs of 4 variables 
-		-Participant_Number
-		-Activity_Recorded	
-		-Movement_Recorded	
-		-Average_of_Recorded_Movement
+- 1.	The long form has been adopted for the initial tidy Dataset giving 10299 obs of 68 variables
+- 2.	68 columns have been selected from the original data based on interpreting the requirements of "mean()" and "std()"
+- 3.	Tidy Dataset 2 has 11880 obs of 4 variables 
+-			Participant_Number
+-			Activity_Recorded	
+-			Movement_Recorded	
+-			Average_of_Recorded_Movement
 	
 ******************************************************************************************************************
 #SECTION 3. SCRIPT Detail	 
@@ -107,25 +107,24 @@ Assumtions/Expected Results:
   Restart Value denotes where to start in the script 
     (a value of 999 means run nothing a value of 2 means start at step2 and run all subsequent steps
 
- STEP 0. Set up the environment: 
- STEP 0a. Set working directory, (only if 'currentdirectory_flag' == 1)
- STEP 0b. Install Packages, (only if 'Packages_flag' == 1) 
- STEP 0c. Use libraries,  (only if flag == 1)
- STEP 0d. Download file and unzip it into the Project directory (only if flag == 1)
- STEP 0e. Read file into global environment (only if flag == 1)
+  STEP 0. Set up the environment: 
+  STEP 0a. Set working directory, (only if 'currentdirectory_flag' == 1)
+  STEP 0b. Install Packages, (only if 'Packages_flag' == 1) 
+  STEP 0c. Use libraries,  (only if flag == 1)
+  STEP 0d. Download file and unzip it into the Project directory (only if flag == 1)
+  STEP 0e. Read file into global environment (only if flag == 1)
 
-# STEP 1. Combine all rows for each file type - Activity, Subject and Data
-# STEP 2. Replace 
-#     a.    Column names V1...Vnnnn with something more descriptive
-#     b.    Activity codes in rows with their actual description
-#     c.    Also replaces columns like tBodyAccJerkMag... with 
-#                                 Average_Time_Body_Accelerometer_Jerk_Magnitude...
-# STEP 3. Extract the Mean and Std columns into their own datasets 
-# STEP 4. Put datasets together into a large table and alter column haedings (Tidy Dataset long form)
-# STEP 5. Extract a second independant tidy dataset with the average of each variable 
-# STEP 6. Write the tidy dataset to a space separated file
-# STEP 999. Remove (Cleanup) the interim work files from the Global Environment 
-####################################################################################
+  STEP 1. Combine all rows for each file type - Activity, Subject and Data
+  STEP 2. Replace 
+      a.    Column names V1...Vnnnn with something more descriptive
+      b.    Activity codes in rows with their actual description
+      c.    Also replaces columns like tBodyAccJerkMag... with 
+                                  Average_Time_Body_Accelerometer_Jerk_Magnitude...
+  STEP 3. Extract the Mean and Std columns into their own datasets 
+  STEP 4. Put datasets together into a large table and alter column haedings (Tidy Dataset long form)
+  STEP 5. Extract a second independant tidy dataset with the average of each variable 
+  STEP 6. Write the tidy dataset to a space separated file
+  STEP 999. Remove (Cleanup) the interim work files from the Global Environment 
 
 
 
