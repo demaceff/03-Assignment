@@ -61,6 +61,11 @@ Input files from the original experiment:
 - 'test/X_test.txt': Test set.
 - 'test/y_test.txt': Test labels.
 
+Files from the original experiment NOT used:
+============================================
+The inertia datasets - they are not used directly in the script to produce the tidy data. They do exist in the 
+sub directories of the test and train directories.
+
 *****************************************************************************************************************
 #SECTION 2. WHAT THE run_analysis SCRIPT DOES
 
@@ -104,7 +109,20 @@ Input files from the original experiment:
 
 
 ******************************************************************************************************************
-#SECTION 3. SCRIPT Detail	 
+#SECTION 3. SCRIPT Detail
+
+Pre Requisites:
+
+	You will need the following packages installed: httr, tidyr, dplyr, plyr, reshape, reshape2, downloader
+	
+Input and Output:	
+
+	The input directory will need to be set in the code that runs if  "currentdirectory_flag" has a value of 1
+	
+	The output will be placed in the working directory as Tidy2.txt
+	
+CODE Comments:	
+ 	 
   Based on the value set in the Runtime Flags set up the environment and input
   
   Set flag to setwd to the Assignment directory
